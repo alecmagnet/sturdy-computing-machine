@@ -23,6 +23,13 @@ var shuffle = function(nums, n) {
     return retArr
 };
 
+//https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/submissions/
+
+var subtractProductAndSum = function(n) {
+    arr = Array.from(String(n), Number)
+    return arr.reduce((a,b) => a*b) - arr.reduce((a,b) => a+b)
+};
+
 // https://leetcode.com/problems/defanging-an-ip-address/submissions/
 
 var defangIPaddr = function(address) {
