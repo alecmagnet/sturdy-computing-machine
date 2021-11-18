@@ -23,3 +23,8 @@ var shuffle = function(nums, n) {
     return retArr
 };
 
+// https://leetcode.com/problems/defanging-an-ip-address/submissions/
+
+var defangIPaddr = function(address) {
+    return address.replaceAll(".", "[.]")
+};
