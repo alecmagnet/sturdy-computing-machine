@@ -2,29 +2,6 @@
 
 
 
-// https://www.codewars.com/kata/52774a314c2333f0a7000688/
-
-function validParentheses(parens) {
-  if (parens === '()' || parens === '') {
-    return true
-  } else if (!parens.includes('()')) {
-    return false 
-  } else {
-    let newStr = parens.replace('()', '')
-    return validParentheses(newStr)
-  }
-}
-
-
-// https://www.codewars.com/kata/52685f7382004e774f0001f7/
-
-function humanReadable (seconds) {
-  const pad = (n) => n < 10 ? `0${n}` : `${n}`
-  let hrs = Math.floor(seconds/3600)
-  let mins = Math.floor((seconds % 3600)/60)
-  let secs = seconds - (mins*60) - (hrs*3600)
-  return pad(hrs)+":"+pad(mins)+":"+pad(secs);
-}
 
 
 // https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/javascript

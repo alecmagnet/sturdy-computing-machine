@@ -1,4 +1,35 @@
 
+// https://leetcode.com/problems/two-sum-ii-input-array-is-sorted
+
+var twoSum = function(nums, target) {
+    let i = 0, j = nums.length -1
+    while (i < j) {
+        if (nums[i] + nums[j] < target) {i++}
+        else if (nums[i] + nums[j] > target) {j--}
+        else if (nums[i] + nums[j] == target) {return [i+1, j+1]}
+    }
+};
+
+
+// https://leetcode.com/problems/move-zeroes
+
+var moveZeroes = function(nums) {
+    let k = 0
+    for (i=0; i<nums.length; i++) {
+        if (nums[i] != 0) {
+            [nums[k++], nums[i]] = [nums[i], nums[k]]
+        }
+    }
+};
+
+var moveZeroes = function(nums) {
+    for (i=0; i<nums.length; i++) {
+        if (nums[i] === 0) {
+            nums.push(nums.splice(i,1))
+            i--
+        }
+    }
+};
 
 
 // IMPORTANT https://leetcode.com/problems/squares-of-a-sorted-array
