@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/count-vowel-substrings-of-a-string/
 
-/**
+/*
  * @param {string} word
  * @return {number}
  */
