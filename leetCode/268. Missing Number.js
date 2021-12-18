@@ -24,7 +24,7 @@ var missingNumber = function(nums) {
 
 // FROM ryadav96's comment at https://leetcode.com/problems/missing-number/discuss/480793/Javascript-Simple-solution-faster-than-99.08-submissions
 
-var missingNumber = function(nums) {
+var missingNumber1 = function(nums) {
     return -nums.reduce((acc,num,i)=> acc+num-i-1,0);
 };
 
