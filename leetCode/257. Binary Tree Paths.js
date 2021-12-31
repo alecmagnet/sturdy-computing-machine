@@ -59,3 +59,5 @@ const helper = (node, list, string) => {
 			}
 	}
 }
+
+// FIGURE THIS OUT TO UNDERSTANT STACK https://leetcode.com/problems/binary-tree-paths/discuss/1516595/JavaScript-100-or-Simple-DFS-Backtracking-Solution
